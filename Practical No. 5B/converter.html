@@ -1,0 +1,86 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>  
+        <meta charset="utf-8" />  
+        <title>The converter</title>  
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700i&display=swap" rel="stylesheet">
+    </head>  
+
+    <body style="font-family:monospace">  
+        
+        <!-- Nav Bar -->
+        <nav style="display: flex;align-items: right;flex-direction: row-reverse;margin-right: 30px;">  
+            <ul><a href="#">Other converters</a></ul>
+        </nav>
+        
+        <!-- Header -->
+        <header role="banner" style="text-align: center;">  
+            <h1>The Temprature Converter</h1>  
+        </header>
+
+        <hr>
+
+        <article style="margin-left: 25%; margin-right: 25%;margin-top: 5%;margin-bottom: 2%;">
+
+            <h2 >Programs to convert Celsius into Fahrenheit</h2>
+            <h3 class="h2">Prelogue:</h3>
+            <p>
+                Temprature can be measured by different units. Two of them are Fahrenheit(<sup>0</sup>F) and Celsius(<sup>0</sup>C).
+            </p>
+            <p>
+                Here are some programs to convert Celsius to Fahrenheit by using the scientific formula in different languages.
+            </p>
+            
+            <br>
+            
+            <h3>Code </h3>
+            <pre>
+            <strong>C : </strong> 
+            <code>
+                #include < stdio.h >
+                int main()  {   
+                    <var>float fahrenheit, celsius;</var>  
+                    <kbd>scanf("%d", &celsius);</kbd>
+                    fahrenheit =( (celsius*9)/5)+32;  
+                    printf("\n\n Temperature in fahrenheit is:  %f",fahrenheit);  
+                    return (0);
+                }
+            </code>
+            <strong>Python :</strong> 
+            <code>
+                celsius = 37.5
+                fahrenheit = (celsius * 1.8) + 32
+                print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))
+            </code>
+            <strong>Java :</strong>
+            <code>
+                public class temperature  {  
+                public static void main (String args[]) { 
+                        float Fahrenheit, Celsius;  
+                        Celsius= 13;  
+                        Fahrenheit =((Celsius*9)/5)+32;  
+                        System.out.println("Temperature in Fahrenheit is: "+Fahrenheit);  
+                    }} 
+                </code>
+            </pre>
+                    
+            <h3>Sample I/P & O/P</h3>
+            <pre>
+            <samp>
+            Input : 0
+            Output : 32
+                
+            Input : -40
+            Output : -40
+            </samp>    
+            </pre>
+                
+            <h3>Complexity</h3>
+            <p>O(1)</p>
+        </article>
+        <hr>
+        <footer style="margin:0% 5% 1% 5%;font-size: large;display: flex;justify-content: space-between;">
+            <ul>Created By - Rushikesh Shelke 2018BTECS00050</ul>
+        </footer>
+    </body>
+</html>
