@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            /* Container Class */
+            .container {
+                border-radius: 9px;
+                background-color:#12acdb;
+                padding-left: 25%;
+                padding-right: 25%;
+            }
+
+            /* Actul form contents */
+            .form-body{
+                background-color:#e8f4ff7c;
+                border-radius: 2%;
+            }
+
+            form{
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 5%;
+            }
+
+            /* All Lables */
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            
+            h1{
+                text-align: center;
+            }
+
+            /* Textarea */
+            input[type=text], select, textarea{
+                width: 85%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                resize: vertical;
+            }
+
+            /* Form Submit Button */
+            input[type=reset] {
+                background-color: #ff7b00;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+
+            /* For Reset Button */
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="form-body">
+                <!--This is header-->
+
+                <header>
+                    <nav>
+                        <br>
+                        <h1>Student Feedback Form <input onclick="alert('This data helps us improve campus facilites.')" type="image" src="Help.png" alt="Why this form?" width="20" height="20"></h1>
+                    </nav>
+                    <p style="font-family:verdana; text-align: center;"> 
+                        Walchand College of engineering, Sangli.
+                    </p>
+                    <br>
+                </header> 
+
+                <hr>
+
+                <!--form-->
+                <form  onsubmit="alert('Form Submitted Successfully !!');return false">
+                    <div>
+                        <label for="prn"><b>PRN:</b> </label>
+                        <input type="text" placeholder="Enter your PRN number" id="prn">
+                    </div>
+                    <div>
+                        <label for="img"><b>Photo Copy :</b>  </label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                    <div>
+                        <label for="myfile"><b> ID Proof :</b> </label>
+                        <input type="file" id="myfile" name="myfile">
+                    </div>
+
+                    <hr>
+                    
+                    <div>
+                        <label for="gender"><b>Choose Gender:</b>  </label>
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <div>
+                        <label for="year"><b>Facilites you use :</b>  </label>
+                        <div>
+                            <input type="checkbox" class="year">
+                            <label> Library </label>
+
+                            <input type="checkbox" class="year">
+                            <label> Study Room </label>
+
+                            <input type="checkbox" class="year">
+                            <label> Computer Lab </label>
+                            
+                            <br>
+   
+                            <input type="checkbox" class="year">
+                            <label> Mech Lab </label>
+
+                            <input type="checkbox" class="year">
+                            <label> E&TC Lab </label>
+
+                            <input type="checkbox" class="year">
+                            <label> Gymkhana </label>
+                        </div> 
+                    </div>  
+
+                    <hr> 
+
+                    <div class="rating">
+                        <h4>What rating would you give (1 to 10) to: </h4>
+
+                        <div>
+                            <label><b>Drinking Water Facility :</b></label>
+                            <input type="number" min="1" max="10">
+                        </div>
+
+                        <div>
+                            <label><b>Campus Cleanliness :</b></label>
+                            <input type="number" min="1" max="10">
+                        </div>
+                    
+                        <div>
+                            <label><b>Gym Equipments :</b></label>
+                            <input type="number" min="1" max="10">
+                        </div>
+
+                        <div>
+                            <label><b>Lab Facility :</b></label>
+                            <input type="number" min="1" max="10">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject"><b>Additional Comments/Suggestions:</b> </label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <hr>
+
+    </body>
+</html>
