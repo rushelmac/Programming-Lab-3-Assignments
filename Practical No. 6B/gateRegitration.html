@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .header-class{
+                text-align: center;
+            }
+
+            .form-class{
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+
+            .section{
+                margin-bottom: 2%;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gate Registration Form</title>
+    </head>
+
+    <body>
+        <header class="header-class">
+            <h2>Gate Registration Form</h2>
+        </header>
+
+        <!-- The registration form -->
+        <form action="#" method="POST" autocomplete="on" onsubmit="alert('Form Submitted Successfully !!');return false" class="form-class">
+
+            <!-- Personal Information -->
+            <fieldset class="section">
+                <legend>Personal Information :</legend>
+                
+                <label for="fName">First Name :</label>
+                <input type="text" name="fName" id="fName" placeholder="Candidate's First Name" required> <br> <br>
+                
+                <label for="mName">Middle Name :</label>
+                <input type="text" name="mName" id="mName" placeholder="Candidate's Middle Name"> <br> <br>
+                
+                <label for="lName">Last Name :</label>
+                <input type="text" name="lName" id="lName" placeholder="Candidate's Last Name"> <br> <br>
+
+                <label for="pName">Parent Name :</label>
+                <input type="text" name="pName" id="pName" placeholder="Name of parent/guardian"> <br> <br>
+                
+                <label for="contact">Phone No. :</label>
+                <input type="tel" name="contact" id="contact"> <br> <br>
+
+                <label for="mail">E - Mail id :</label>
+                <input type="email" name="mail" id="mail"> <br> <br>
+
+                <label for="nationality">Nationality :</label>
+                <input type="text" name="nationality" id="nationality" value="Indian" readonly> <br> <br>
+
+                <label for="address">Address :</label>
+                <textarea type="text" name="address" id="address" rows="2" cols="30"> </textarea> <br> <br>
+
+                <label for="idProof">ID Proof :</label>
+                <select name="idProof" id="idProof">
+                    <option value="instID">Institude ID</option>
+                    <option value="adrID" selected>Aadhar ID</option>
+                    <option value="panID">PAN ID</option>
+                </select>
+                <input type="file" name="idProof" id="idProof"> <br> <br>
+            </fieldset>
+
+            <!-- Educational Information -->
+            <fieldset class="section">
+                <legend>Educational Information :</legend>
+
+                <label for="qualification">Qualification :</label>
+                <select name="qualification" id="qualification" size="4" required multiple>
+                    <option value="BE">BE</option>
+                    <option value="BSc">B.Sc.</option>
+                    <option value="Btech">BTech</option>
+                    <option value="Btech">BTech</option>
+                    <option value="CE">Civil Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                    <option value="CS">Computer Engineering</option>
+                    <option value="ME">Mechannical Engineering</option>
+                </select>
+                <br> <br>
+
+                <label for="pName">College :</label>
+                <input list="colleges" name="pName" id="pName"> <br> <br>
+
+                <datalist id="colleges">
+                    <option value="Walchand College of Engg.">
+                    <option value="College of Engg, Pune.">
+                    <option value="VJTI">
+                    <option value="SPCE">
+                    <option value="PICT">
+                </datalist>
+                
+            </fieldset>
+
+            <!-- Exam preferances -->
+            <fieldset class="section">
+                <legend>ExamPpreferances :</legend>
+
+                <label for="branch">Gate Exam Paper Branch :</label>
+                <select name="branch" id="branch">
+                    <option value="CS">Computer Science</option>
+                    <option value="ME">Mechannical Engg.</option>
+                    <option value="EE">Electrical Engg.</option>
+                    <option value="CE">Civil Engg.</option>
+                </select>
+                    <br> <br>
+
+                <label for="city">Exam City preferances :</label>
+                <select name="city" id="city">
+
+                    <optgroup label="Mahatashtra">
+                        <option value="Sangli">Sangli</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Kolhapur">Kolhapur</option>
+                    </optgroup>
+
+                    <optgroup label="Karnataka">
+                        <option value="one">City one</option>
+                        <option value="two">City two</option>
+                        <option value="three">City three</option>
+                    </optgroup>
+
+                    <optgroup label="Goa">
+                        <option value="Uno">Uno</option>
+                        <option value="Dous">Dous</option>
+                        <option value="Tres">Tres</option>
+                    </optgroup>
+                </select>
+                
+            </fieldset class="section">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
