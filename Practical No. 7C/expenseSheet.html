@@ -1,0 +1,121 @@
+<!-- Rushikesh Shelke 2018BTECS00050 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .center{
+                padding: 50px 140px;
+                text-align: center;
+            }
+    
+            a{
+                text-decoration: none;
+            }
+    
+            .container{
+                padding-left: 20%;
+                padding-right: 20%;
+                align-items: center;
+            }
+    
+            .header-class{
+                text-align: center;
+            }
+    
+            .nav-class{
+                align-self:center;
+                text-align: center;
+                display: inline;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;    
+            }
+        </style>
+        <title>My Expenses</title>
+    </head>
+
+    <body>
+       <div class="container">
+           <!-- The Header Section -->
+            <header class="header-class">
+                <h2>The Expense Sheet</h2>
+            </header>
+            <hr>
+
+            <nav>
+                <a href="#">Practical 1</a>
+                <a href="#">Practical 2</a>
+            </nav>
+            <br>
+
+            <!-- The Table section -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Expenditure Title</th>
+                        <th>Expenditure Amount</th>
+                        <th>Total Allocated Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Internet</td>
+                        <td>200</td>
+                        <th rowspan="5">5000</th>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gym</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Room</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>n</td>
+                        <td>xyz</td>
+                        <td>500</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Total Expenditure:</th>
+                        <th>3200</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+            <!-- Author Information -->
+            <footer>
+                <address>
+                    <h4>Author Information:</h4>
+                    Developer : Rushikesh Shelke <br>
+                    <a href="https://www.linkedin.com/in/rushikesh-shelke/" target="_blank">LinkedIn</a> 
+                    <a href="https://github.com/rushelmac" target="_blank" style="display: inline;margin-left: 5%;">GitHub</a>
+                </address>
+                <br><hr>
+                Created with ❤ By 2018BTECS00050
+            </footer>
+       </div>
+    </body>
+</html>
