@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+section{
+    margin: 1em;
+    padding: 1em;
+}
+
+/* ---------------------------------------------Header------------------------------------- */
+
+header, main, footer {
+    margin: 0 auto;
+}
+
+header {
+    padding: 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: fixed;
+    color: black;
+}
+
+header section {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 150px;
+}
