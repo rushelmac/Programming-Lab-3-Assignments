@@ -29,6 +29,7 @@ header {
 header section {
     margin: 0 auto;
     max-width: 640px;
+    font-size: larger;  
 }
 
 header img {
