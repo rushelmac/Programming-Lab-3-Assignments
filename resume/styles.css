@@ -36,3 +36,21 @@ header img {
     border-radius: 50%;
     max-width: 150px;
 }
+
+/* ---------------------------------------------Main------------------------------------- */
+
+main {
+    max-width: 1140px;
+}
+
+article {
+    padding:0 1em;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3, h4 {
+    font-weight: bold;
+}
