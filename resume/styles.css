@@ -61,9 +61,10 @@ header {
 }
 
 header section {
-    margin: 0 auto;
+    margin: 0 auto 0 15em;
     max-width: 640px;
-    font-size: larger;  
+    font-size: larger; 
+    position: absolute;
 }
 
 header img {
@@ -71,6 +72,9 @@ header img {
     max-width: 150px;
 }
 
+.txt-type > .txt {
+    border-right: 0.1rem solid #777;
+}
 /* ---------------------------------------------Main & Education------------------------------------- */
 
 main {
