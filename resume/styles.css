@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
-  margin: 0;
+  margin: 0 5%;
   font-family: 'Raleway';
   font-size: 16px;
   line-height: 1.8em;
@@ -18,6 +18,7 @@ section{
     width: 50px; /* Set a specific width */
     background-color: #555; /* Dark-grey background */
     position: fixed;
+    border-radius: 10%;
 }
   
 .icon-bar a {
@@ -34,7 +35,7 @@ section{
 }
 
 .active {
-    background-color: #4CAF50; /* Add an active/current color */
+    background-color: #d38304; /* Add an active/current color */
 }
 
 /* ---------------------------------------------Header------------------------------------- */
