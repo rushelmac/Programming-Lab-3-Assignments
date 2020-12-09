@@ -12,6 +12,31 @@ section{
     padding: 1em;
 }
 
+/* ---------------------------------------------Icon Bar------------------------------------- */
+
+.icon-bar {
+    width: 50px; /* Set a specific width */
+    background-color: #555; /* Dark-grey background */
+    position: fixed;
+}
+  
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 20px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+
 /* ---------------------------------------------Header------------------------------------- */
 
 header, main, footer {
@@ -45,6 +70,7 @@ main {
 
 article {
     padding:0 1em;
+    margin-bottom: 2em;
 }
 
 h3 {
@@ -54,6 +80,15 @@ h3 {
 h3, h4 {
     font-weight: bold;
 }
+
+.school, .job-title {
+    text-transform: capitalize;
+  }
+  
+  .school span, .job-title span {
+    color: #889499;
+    text-decoration: underline;
+  }
 
 /* ---------------------------------------------Skills------------------------------------- */
 
