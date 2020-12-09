@@ -61,7 +61,7 @@ header {
 }
 
 header section {
-    margin: 0 auto 0 15em;
+    margin: 0 auto 0 13em;
     max-width: 640px;
     font-size: larger; 
     position: absolute;
@@ -74,11 +74,16 @@ header img {
 
 .txt-type > .txt {
     border-right: 0.1rem solid #777;
+    color: maroon;
 }
 /* ---------------------------------------------Main & Education------------------------------------- */
 
 main {
     max-width: 1140px;
+}
+
+main section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
 }
 
 article {
