@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
   margin: 0 5%;
   font-family: 'Raleway';
@@ -18,6 +22,7 @@ section{
     width: 50px; /* Set a specific width */
     background-color: #555; /* Dark-grey background */
     position: fixed;
+    right: 0;
 }
   
 .icon-bar a {
@@ -36,6 +41,10 @@ section{
 .active {
     background-color: #d38304; /* Add an active/current color */
 }
+
+.navbar-default .icon-bar > .active > a, 
+.navbar-default .icon-bar > .active > a:hover, 
+.navbar-default .icon-bar > .active > a:focus 
 
 /* ---------------------------------------------Header------------------------------------- */
 
